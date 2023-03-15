@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-OrderingApplication<ordering>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.eshop.ordering.OrderingApplication",
+            "projectName": "ordering",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
