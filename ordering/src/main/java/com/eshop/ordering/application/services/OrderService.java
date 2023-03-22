@@ -3,6 +3,7 @@ package com.eshop.ordering.application.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.eshop.ordering.application.commands.AddItemsToOrderCommand;
 import com.eshop.ordering.application.commands.CreateOrderDraftCommand;
 
 @Service
@@ -21,4 +22,11 @@ public class OrderService {
         this.aggregate.handleCreateOrderDraftCommand(command);
 
     }
+
+    public void handleAddItemsToOrderCommand(AddItemsToOrderCommand command) throws Exception {
+
+        this.aggregate.handleAddItemsToOrderCommand(command);
+
+    }
+
 }

@@ -7,10 +7,12 @@ import lombok.*;
 
 @Data               // Lombok
 @AllArgsConstructor // Lombok
-public class CreateOrderDraftCommand {
+public class AddItemsToOrderCommand {
     
+    @NotNull(message = "The order ID is required.")
+    private Long orderId;
+
     @NotNull(message = "The buyer ID is required.")
-    @Min(value = 1, message = "The buyer ID value is not valid.")
     private Long buyerId;
 
     @NotEmpty(message = "The list of order items cannot be empty.")
